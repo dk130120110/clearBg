@@ -1,0 +1,11 @@
+<view>原图：</view>
+<image src='{{img}}' style="width: {{width / ratio}}rpx; height: {{height / ratio}}rpx;"></image>
+<view>画布：</view>
+<canvas canvas-id='canvas' id='canvas' class='canvas' style="width: {{width / ratio}}rpx; height: {{height / ratio}}rpx;" catch:touchstart='touchstart' catch:touchmove='touchmove' bind:touchend='touchend'></canvas>
+<view class='btn-box'>
+  <view class="btn {{clear && 'disable'}}" bind:tap='clearWhite'>去白底</view>
+  <view class='btn' bind:tap='rubber' style="color: {{rubber ? '#f00' : '#000'}}">{{ rubber ? '关闭橡皮擦' : '开启橡皮擦' }}</view>
+  <view class='btn' bind:tap='paint' style="color: {{paint ? '#f00' : '#000'}}">{{paint ? '关闭涂抹' : '开启涂抹'}}</view>
+  <view class='btn' bind:tap='back'>撤回</view>
+  <view class='btn' bind:tap='export'>导出</view>
+</view>
