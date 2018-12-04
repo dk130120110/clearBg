@@ -22,6 +22,8 @@ clearBg
 
 ![Image text](https://github.com/dk130120110/clearBg/blob/master/assets/paint.png?raw=true)
 
+撤回和导出功能已实现，效果图请自行脑补。
+
 参考文档
 --------
 
